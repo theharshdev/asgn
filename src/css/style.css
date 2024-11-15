@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #2494ea;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  content: "";
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "";
+}
+
+@media screen and (max-width: 1024px) {
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: -20px;
+  }
+}
